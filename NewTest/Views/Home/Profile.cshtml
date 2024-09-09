@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Profile Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <!-- Bootstrap CDN for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1IFSVB8NJc6QwZV" crossorigin="anonymous">
+    <style>
+        /* circular profile picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Picture -->
+        <div class="row mb-4">
+            <div class="col-md-12 text-center">
+                <img src="~/Profile Pic/afro-guitar-colorful-music-sunglasses-digital-art-4k-wallpaper-uhdpaper.com-222@1@n.jpg" alt="Profile Picture" class="img-fluid profile-pic" asp-append-version="true">
+            </div>
+        </div>
+
+        <!-- profile Table -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Student info</h4>
+                <table class="table table-bordered table-striped">
+                    <tbody>
+                        <tr><td>Name</td><td>Morty</td></tr>
+                        <tr><td>Last Name</td><td>Smith</td></tr>
+                        <tr><td>National id</td><td>1234567890</td></tr>
+                        <tr><td>Student id</td><td>00231153907004</td></tr>
+                        <tr><td>Tel number</td><td>09385740269</td></tr>
+                        <tr><td>University name</td><td>MIT</td></tr>
+                        <tr><td>Field</td><td>Computer since 907*</td></tr>
+                        <tr><td>Entery year</td><td>2021</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93GxAB+UcGxgm84e0T9WhrD2f5voKnKzEPRpO5y4tv8iw3vIrnOhwuIZJ3BXVQ" crossorigin="anonymous"></script>
+</body>
+</html>
